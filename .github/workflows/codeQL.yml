@@ -20,7 +20,8 @@ jobs:
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v1
-        config: ../../codeql-config.yml
+        with :
+          config: ../../codeql-config.yml
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
